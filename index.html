@@ -15,6 +15,7 @@
           Тёмная
         </button>
       </div>
+
       <div class="layout">
         <div class="planet-wrap" aria-hidden="true">
           <div class="planet-orbit">
@@ -37,9 +38,9 @@
           </div>
         </div>
 
-        <section class="panel" aria-label="Форма ввода кодов доступа BHB и SUA">
+        <section class="panel" aria-label="Форма ввода кодов доступа BHB, SUA и drive3">
           <header class="panel-header">
-            <h1>BHB / SUA Gateway</h1>
+            <h1>BHB / SUA GATEWAY</h1>
             <p>Введите коды доступа к закрытой документации.</p>
           </header>
 
@@ -48,10 +49,17 @@
               <label for="code-bhb">Код BHB</label>
               <input id="code-bhb" type="text" placeholder="Например: BHB_Wattes_187" autocomplete="off" />
             </div>
+
             <div>
               <label for="code-sua">Код SUA</label>
               <input id="code-sua" type="text" placeholder="Опционально" autocomplete="off" />
             </div>
+
+            <div class="field-drive">
+              <label for="code-drive">Код drive3 <span class="flag-ru" aria-hidden="true">🇷🇺</span></label>
+              <input id="code-drive" type="text" placeholder="Опционально" autocomplete="off" />
+            </div>
+
             <div class="error-text" id="code-error"></div>
           </div>
 
@@ -65,6 +73,7 @@
             Сейчас проверяется только код BHB. При корректном значении вы будете перенаправлены
             на страницу документации. Остальная логика может быть добавлена позже.
           </p>
+
           <p class="sysline">
             <span id="status-text">STATUS: idle</span>
             • NODE: BHB-GATEWAY • BUILD: 0.1.3 • ENCRYPTION: AES-256

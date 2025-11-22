@@ -64,7 +64,6 @@
     }
   }
 
-  // Если у системы стоит светлая тема — подстроимся под неё
   try {
     const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
     if (prefersLight) {
